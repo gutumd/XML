@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  XML FILE
+  <script>
+    var doc = document.implementation.createDocument("", "", null);
+    var people = doc.createElement("people");
+    var person1 = doc.createElement("person");
+    person1.setAttribute("name", "John");
+    person1.setAttribute("age", "20");
+    var person2 = doc.createElement("person");
+    person2.setAttribute("name", "Mary");
+    person2.setAttribute("age", "21");
+    people.appendChild(person1);
+    people.appendChild(person2);
+    doc.appendChild(people);
+    var xml = new DOMParser().parseFromString(new XMLSerializer().serializeToString(doc), "text/xml");
+    console.log(xml);
+  </script>
+</body>
+
+</html>

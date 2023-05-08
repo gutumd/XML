@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cars>
+  <car id="1">
+    <mark>Audi</mark>
+    <model>A6</model>
+    <color>Gray</color>
+  </car>
+  <car id="2">
+    <mark>BMW</mark>
+    <model>3-SERIES</model>
+    <color>Red</color>
+  </car>
+  <car id="3">
+    <mark>Mercedes</mark>
+    <model>C-Class</model>
+    <color>Blue</color>
+  </car>
+</cars>
